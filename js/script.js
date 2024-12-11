@@ -31,3 +31,10 @@ buttonConvertir.addEventListener('click', () => {
         alert('Introduce un monto válido en MXN.');
     }
 });
+
+const buttonLimpiar = document.getElementById('limpiar');
+
+buttonLimpiar.addEventListener('click', () => {
+    inputPrecio.value = '';       // Limpia el campo de pesos mexicanos
+    inputPrecioDolar.value = ''; // Limpia el campo de dólares
+});
